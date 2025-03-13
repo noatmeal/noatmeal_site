@@ -14,7 +14,8 @@ fi
 curl_command="curl -H 'Authorization: Bearer $NEOCITIES_API_KEY'"
 
 for FILEPATH in "${filepaths[@]}"; do
-  curl_command+=" -F '$FILEPATH=@$FILEPATH'"
+  FILEPATH_WITHOUT_PREFIX="${FILEPATH#site/}"
+  curl_command+=" -F '$FILEPATH_WITHOUT_PREFIX=@$FILEPATH'"
 done
 
 curl_command+=" 'https://neocities.org/api/upload'"
