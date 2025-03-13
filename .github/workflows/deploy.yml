@@ -2,6 +2,8 @@ name: Deploy Site
 run-name: ${{ github.actor }} is deploying the site.
 on:
   pull_request:
+    branches:
+      - main
     types:
       - closed
 jobs:
