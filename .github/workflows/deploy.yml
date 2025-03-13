@@ -1,11 +1,6 @@
 name: Deploy Site 
 run-name: ${{ github.actor }} is deploying the site.
-on:
-  pull_request:
-    branches:
-      - main
-    types:
-      - closed
+on: [push]
 jobs:
   Deploy-Site:
     runs-on: ubuntu-latest
@@ -35,6 +30,7 @@ jobs:
         run: |
           chmod +x ./push_files.sh
           ./push_files.sh
+      - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Take Down Maintenance Page 
         env:
           NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
