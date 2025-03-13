@@ -31,3 +31,12 @@ jobs:
           chmod +x ./push_files.sh
           ./push_files.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Take Down Maintenance Page 
+        env:
+          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
+        run: |
+          curl \
+          -H "Authorization: Bearer $NEOCITIES_API_KEY" \
+          -F "index.html=@site/index.html" \
+          "https://neocities.org/api/upload"
+      - run: echo "🍏 This job's status is ${{ job.status }}."
