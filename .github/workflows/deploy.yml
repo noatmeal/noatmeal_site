@@ -18,4 +18,8 @@ jobs:
           -H "Authorization: Bearer $NEOCITIES_API_KEY" \
           -F "index.html=@site/maintenance.html" \
           "https://neocities.org/api/upload"
+      - name: Delete Remote Files 
+        run: |
+          chmod +x ./delete_files.sh
+          ./delete_files.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
