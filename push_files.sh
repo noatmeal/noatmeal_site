@@ -3,8 +3,7 @@
 filepaths=()
 
 for FILE in "site"/*; do
-  RELATIVE_PATH="${FILE#site/}"
-  filepaths+=("$RELATIVE_PATH")
+  filepaths+=("$FILE")
 done
 
 if [ ${#filepaths[@]} -eq 0 ]; then
