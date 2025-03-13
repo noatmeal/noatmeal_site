@@ -24,4 +24,10 @@ jobs:
         run: |
           chmod +x ./delete_files.sh
           ./delete_files.sh
+      - name: Push Local Files 
+        env:
+          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
+        run: |
+          chmod +x ./push_files.sh
+          ./push_files.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
