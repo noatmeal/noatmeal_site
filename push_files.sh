@@ -3,7 +3,9 @@
 filepaths=()
 
 for FILE in "site"/*; do
-  filepaths+=("$FILE")
+  if [[ "$FILE" != "site/index.html" ]]; then
+    filepaths+=("$FILE")
+  fi
 done
 
 if [ ${#filepaths[@]} -eq 0 ]; then
