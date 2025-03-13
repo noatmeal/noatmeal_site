@@ -29,4 +29,4 @@ curl_command+=" 'https://neocities.org/api/delete'"
 echo "Running:"
 echo "$curl_command"
 
-# eval "$curl_command"
+eval "$curl_command"
