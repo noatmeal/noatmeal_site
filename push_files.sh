@@ -22,7 +22,4 @@ done
 
 curl_command+=" 'https://neocities.org/api/upload'"
 
-echo "Running:"
-echo "$curl_command"
-
 eval "$curl_command"
