@@ -19,6 +19,8 @@ jobs:
           -F "index.html=@site/maintenance.html" \
           "https://neocities.org/api/upload"
       - name: Delete Remote Files 
+        env:
+          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
         run: |
           chmod +x ./delete_files.sh
           ./delete_files.sh
