@@ -54,6 +54,14 @@ html, body {
   height: 100vh; 
 }
 
+.dark-theme-selector {
+  display: none;
+}
+
+.light-theme-selector {
+  display: inline;
+}
+
 #light:target ~ .quasi-body {
   background-color: white;
   color: black;
@@ -62,10 +70,26 @@ html, body {
   height: 100vh; 
 }
 
+#light:target ~ .quasi-body .light-theme-selector {
+  display: none;
+}
+
+#light:target ~ .quasi-body .dark-theme-selector {
+  display: inline;
+}
+
 #dark:target ~ .quasi-body {
   background-color: black;
   color: #dddddd;
   font-family: bigBlueTerm;
   width: 100vw; 
   height: 100vh; 
+}
+
+#dark:target ~ .quasi-body .dark-theme-selector {
+  display: none;
+}
+
+#dark:target ~ .quasi-body .light-theme-selector {
+  display: inline;
 }
