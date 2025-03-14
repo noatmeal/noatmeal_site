@@ -4,48 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  <link rel='shortcut icon' href='/favicon.ico' />
-  <title>Swap Styles with :target</title>
-  <style>
-    /* Default style for the div */
-    .color-box {
-      width: 200px;
-      height: 200px;
-      border: 2px solid black;
-      text-align: center;
-      line-height: 200px;
-      font-size: 20px;
-      background-color: white; /* Default background */
-      color: black; /* Default text color */
-    }
-
-    /* Style when #red is targeted */
-    #red:target ~ .color-box {
-      background-color: red;
-      color: white;
-    }
-
-    /* Style when #blue is targeted */
-    #blue:target ~ .color-box {
-      background-color: blue;
-      color: white;
-    }
-  </style>
+  <link rel="icon" href="/favicon.ico">
+  <title>Noatmeal</title>
 </head>
 <body>
   <!-- Hidden anchors for targeting -->
-  <div id="red"></div>
-  <div id="blue"></div>
+  <div id="light"></div>
+  <div id="dark"></div>
 
-  <!-- Links to change the URL fragment -->
-  <p>
-    <a href="#red">Change to Red</a> |
-    <a href="#blue">Change to Blue</a>
-  </p>
-
-  <!-- The div whose style will change -->
-  <div class="color-box">
-    Color Box
+  <div class="flex-center full-width quasi-body">
+    <div class="eighty-character-width">
+      <div>
+        <a href="#dark" class="dark-theme-selector">Dark Theme</a>
+        <a href="#light" class="light-theme-selector">Light Theme</a>
+      </div>
+      <div class="vertical-buffer-1em"></div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>  
   </div>
 </body>
 </html>
