@@ -11,16 +11,61 @@
   width: 80ch;
 }
 
-body {
-  background-color: black;
-  color: #dddddd; 
-}
+
+/*
+ * Blessed Nerd Fonts:
+ * https://www.nerdfonts.com/font-downloads
+ */
 
 @font-face {
   font-family: bigBlueTerm;
   src: url(/fonts/BigBlueTerminal/BigBlueTermPlusNerdFontMono-Regular.ttf);
 }
 
-.big-blue-term {
+@font-face {
+  font-family: robotoMono;
+  src: url(/fonts/RobotoMono/RobotoMonoNerdFontMono-Regular.ttf);
+}
+
+.vertical-buffer-1em {
+  margin-top: .25em;
+  margin-bottom: .25em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+/*
+ * Default is the dark theme.
+ * Font color idea came from: 
+ * https://archive.irixnet.org/apocrypha/nekonomicon/forum/8/16727778/1.html
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the html and body take up the full height of the viewport */
+}
+
+.quasi-body {
+  background-color: black;
+  color: #dddddd;
   font-family: bigBlueTerm;
-} 
+  width: 100vw; 
+  height: 100vh; 
+}
+
+#light:target ~ .quasi-body {
+  background-color: white;
+  color: black;
+  font-family: robotoMono;
+  width: 100vw; 
+  height: 100vh; 
+}
+
+#dark:target ~ .quasi-body {
+  background-color: black;
+  color: #dddddd;
+  font-family: bigBlueTerm;
+  width: 100vw; 
+  height: 100vh; 
+}

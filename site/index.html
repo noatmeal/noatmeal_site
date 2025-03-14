@@ -8,10 +8,20 @@
   <title>Noatmeal</title>
 </head>
 <body>
-  <div class="flex-center full-width">
-    <div class="eighty-character-width big-blue-term">
-      First bit of content. Let's test that 80 character width until it wraps. 
-      What does this look like? Lorem ipsum and all that jazz. 
+  <!-- Hidden anchors for targeting -->
+  <div id="light"></div>
+  <div id="dark"></div>
+
+  <div class="flex-center full-width quasi-body">
+    <div class="eighty-character-width">
+      <div>
+        <a href="#dark" class="dark-theme-selector">Dark Theme</a>
+        <a href="#light" class="light-theme-selector">Light Theme</a>
+      </div>
+      <div class="vertical-buffer-1em"></div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
     </div>  
   </div>
 </body>
