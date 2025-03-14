@@ -2,11 +2,11 @@
 
 filepaths=()
 
-for FILE in "site"/*; do
+while IFS= read -r -d '' FILE; do
   if [[ "$FILE" != "site/index.html" ]]; then
     filepaths+=("$FILE")
   fi
-done
+done < <(find "site" -type f -print0)
 
 if [ ${#filepaths[@]} -eq 0 ]; then
   echo "No files to push."
