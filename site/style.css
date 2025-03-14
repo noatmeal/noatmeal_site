@@ -1,5 +1,26 @@
-body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
+
+.full-width {
+  width: 100%;
+}
+
+.eighty-character-width {
+  width: 80ch;
+}
+
+body {
+  background-color: black;
+  color: #dddddd; 
+}
+
+@font-face {
+  font-family: bigBlueTerm;
+  src: url(/fonts/BigBlueTerminal/BigBlueTermPlusNerdFontMono-Regular.ttf);
+}
+
+.big-blue-term {
+  font-family: bigBlueTerm;
+} 

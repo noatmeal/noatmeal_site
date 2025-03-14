@@ -4,48 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  <link rel='shortcut icon' href='/favicon.ico' />
-  <title>Swap Styles with :target</title>
-  <style>
-    /* Default style for the div */
-    .color-box {
-      width: 200px;
-      height: 200px;
-      border: 2px solid black;
-      text-align: center;
-      line-height: 200px;
-      font-size: 20px;
-      background-color: white; /* Default background */
-      color: black; /* Default text color */
-    }
-
-    /* Style when #red is targeted */
-    #red:target ~ .color-box {
-      background-color: red;
-      color: white;
-    }
-
-    /* Style when #blue is targeted */
-    #blue:target ~ .color-box {
-      background-color: blue;
-      color: white;
-    }
-  </style>
+  <link rel="icon" href="/favicon.ico">
+  <title>Noatmeal</title>
 </head>
 <body>
-  <!-- Hidden anchors for targeting -->
-  <div id="red"></div>
-  <div id="blue"></div>
-
-  <!-- Links to change the URL fragment -->
-  <p>
-    <a href="#red">Change to Red</a> |
-    <a href="#blue">Change to Blue</a>
-  </p>
-
-  <!-- The div whose style will change -->
-  <div class="color-box">
-    Color Box
+  <div class="flex-center full-width">
+    <div class="eighty-character-width big-blue-term">
+      First bit of content. Let's test that 80 character width until it wraps. 
+      What does this look like? Lorem ipsum and all that jazz. 
+    </div>  
   </div>
 </body>
 </html>
