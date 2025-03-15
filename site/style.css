@@ -54,6 +54,21 @@ html, body {
   height: 100vh; 
 }
 
+a {
+  background-image: linear-gradient(currentColor 0 0);
+  background-position: center bottom;
+  background-size: var(--underline-width, 0%) 0.1em;
+  background-repeat: no-repeat;
+  color: #dddddd;
+  text-decoration: none;
+  transition: background-size 0.15s;
+  padding-bottom: .2em
+}
+
+a:hover {
+  --underline-width: 100%;
+}
+
 .dark-theme-selector {
   display: none;
 }
@@ -68,6 +83,21 @@ html, body {
   font-family: robotoMono;
   width: 100vw; 
   height: 100vh; 
+}
+
+#light:target ~ .quasi-body a {
+  background-image: linear-gradient(currentColor 0 0);
+  background-position: center bottom;
+  background-size: var(--underline-width, 0%) 0.1em;
+  background-repeat: no-repeat;
+  color: black;
+  text-decoration: none;
+  transition: background-size 0.15s;
+  padding-bottom: .2em
+}
+
+#light:target ~ .quasi-body a:hover {
+  --underline-width: 100%;
 }
 
 #light:target ~ .quasi-body .light-theme-selector {
@@ -86,6 +116,21 @@ html, body {
   height: 100vh; 
 }
 
+#dark:target ~ .quasi-body a {
+  background-image: linear-gradient(currentColor 0 0);
+  background-position: center bottom;
+  background-size: var(--underline-width, 0%) 0.1em;
+  background-repeat: no-repeat;
+  color: #dddddd;
+  text-decoration: none;
+  transition: background-size 0.15s;
+  padding-bottom: .2em
+}
+
+#dark:target ~ .quasi-body a:hover {
+  --underline-width: 100%;
+}
+
 #dark:target ~ .quasi-body .dark-theme-selector {
   display: none;
 }
@@ -93,3 +138,6 @@ html, body {
 #dark:target ~ .quasi-body .light-theme-selector {
   display: inline;
 }
+
+
+
