@@ -7,7 +7,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%; 
+  height: 100%;
+  font-size: 1.25vw;
 }
 
 .quasi-body {
@@ -29,4 +30,30 @@ a {
 
 .light-theme-selector {
   display: inline;
+}
+
+.menu-item {
+  text-decoration: underline;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-item {
+  padding-left: 1em;
+}
+
+.list-item-except-last {
+  padding-bottom: .25em;
+}
+
+.first-menu {
+  list-style-type: "->";
+  padding-left: 1.5em;
+}
+
+.second-menu {
+  list-style-type: "->";
 }
