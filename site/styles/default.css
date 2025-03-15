@@ -1,0 +1,32 @@
+/*
+ * Default is the dark theme.
+ * Font color idea came from: 
+ * https://archive.irixnet.org/apocrypha/nekonomicon/forum/8/16727778/1.html
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+.quasi-body {
+  background-color: black;
+  color: #dddddd;
+  font-family: bigBlueTerm;
+  width: 100vw; 
+  height: 100vh;
+  overflow: scroll;
+}
+
+a {
+  color: #dddddd;
+}
+
+.dark-theme-selector {
+  display: none;
+}
+
+.light-theme-selector {
+  display: inline;
+}
