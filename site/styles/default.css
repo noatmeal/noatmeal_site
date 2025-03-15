@@ -35,11 +35,6 @@ a {
   text-decoration: underline;
 }
 
-.menu {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .menu-item {
   padding-left: .25em;
 }
@@ -55,4 +50,5 @@ a {
 
 .second-menu {
   list-style-type: "->";
+  padding-left: 1.5em;
 }
