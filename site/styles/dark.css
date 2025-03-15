@@ -1,0 +1,19 @@
+#dark:target ~ .quasi-body {
+  background-color: black;
+  color: #dddddd;
+  font-family: bigBlueTerm;
+  width: 100vw; 
+  height: 100vh; 
+}
+
+#dark:target ~ .quasi-body a {
+  color: #dddddd;
+}
+
+#dark:target ~ .quasi-body .dark-theme-selector {
+  display: none;
+}
+
+#dark:target ~ .quasi-body .light-theme-selector {
+  display: inline;
+}
