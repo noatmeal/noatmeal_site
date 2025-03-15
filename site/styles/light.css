@@ -17,3 +17,8 @@
 #light:target ~ .quasi-body .dark-theme-selector {
   display: inline;
 }
+
+#light:target ~ .quasi-body .first-menu {
+  list-style-type: "->";
+  padding-left: 1em;
+}
