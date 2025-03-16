@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: bigBlueTerm;
-  src: url(/fonts/BigBlueTerminal/BigBlueTermPlusNerdFontMono-Regular.ttf);
+  src: url(/fonts/BigBlueTerminal/SmallBigBlueTermPlusNerdFontMono-Regular.ttf);
 }
 
 @font-face {
   font-family: robotoMono;
-  src: url(/fonts/RobotoMono/RobotoMonoNerdFontMono-Regular.ttf);
+  src: url(/fonts/RobotoMono/SmallRobotoMonoNerdFontMono-Regular.ttf);
 }
 
 .flex-center {
