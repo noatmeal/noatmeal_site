@@ -53,10 +53,14 @@ a {
 
 .first-menu {
   list-style-type: "->";
-  padding-left: 1.5em;
+  padding-left: 0;
+}
+
+ul > li {
+  display: inline-block;
 }
 
 .second-menu {
   list-style-type: "->";
-  padding-left: 1.5em;
+  padding-left: 0;
 }

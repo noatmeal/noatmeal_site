@@ -28,10 +28,10 @@
 
 #light:target ~ .quasi-body .first-menu {
   list-style-type: "->";
-  padding-left: 1em;
+  padding-left: 0;
 }
 
 #light:target ~ .quasi-body .second-menu {
   list-style-type: "->";
-  padding-left: 1em;
+  padding-left: 0;
 }
