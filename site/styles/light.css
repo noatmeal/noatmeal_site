@@ -18,6 +18,14 @@
   display: inline;
 }
 
+#light:target ~ .quasi-body .light-theme-link {
+  display: inline;
+}
+
+#light:target ~ .quasi-body .dark-theme-link {
+  display: none;
+}
+
 #light:target ~ .quasi-body .first-menu {
   list-style-type: "->";
   padding-left: 1em;
