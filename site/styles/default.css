@@ -39,14 +39,6 @@ a {
   display: none;
 }
 
-.menu-item {
-  text-decoration: underline;
-}
-
-.menu-item {
-  padding-left: .25em;
-}
-
 .list-item-except-last {
   padding-bottom: .5em;
 }
