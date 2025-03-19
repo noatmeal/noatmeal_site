@@ -31,6 +31,14 @@ a {
   display: inline;
 }
 
+.dark-theme-link {
+  display: inline;
+}
+
+.light-theme-link {
+  display: none;
+}
+
 .menu-item {
   text-decoration: underline;
 }
@@ -40,7 +48,7 @@ a {
 }
 
 .list-item-except-last {
-  padding-bottom: .25em;
+  padding-bottom: .5em;
 }
 
 .first-menu {

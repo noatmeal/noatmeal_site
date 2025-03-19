@@ -17,3 +17,11 @@
 #dark:target ~ .quasi-body .light-theme-selector {
   display: inline;
 }
+
+#dark:target ~ .quasi-body .dark-theme-link {
+  display: inline;
+}
+
+#dark:target ~ .quasi-body .light-theme-link {
+  display: none;
+}
