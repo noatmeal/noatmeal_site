@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>A Bowl of Noatmeal</title>
+  <link>https://noatmeal.me/</link>
+  <description>Greetings! I'm Noatmeal and this is my blog. My goal is to mostly write about computer science, programming, and mathematics, but life tends to be interesting in a lot of other ways and so more general topics are bound to be discussed here. </description>
+  <item>
+    <title>Roadmap</title>
+    <link>https://noatmeal.me/blog/posts/roadmap</link>
+    <description>A roadmap of where I intend to go with this blog in the near future.</description>
+  </item>
+</channel>
+
+</rss> 
