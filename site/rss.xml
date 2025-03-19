@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="https://noatmeal.me/rss.xml">
 
 <channel>
   <title>A Bowl of Noatmeal</title>
@@ -8,8 +8,10 @@
   <item>
     <title>Roadmap</title>
     <link>https://noatmeal.me/blog/posts/roadmap</link>
+    <guid>https://noatmeal.me/blog/posts/roadmap</guid>
     <description>A roadmap of where I intend to go with this blog in the near future.</description>
   </item>
+  <atom:link href="https://noatmeal.me/rss.xml" rel="self" type="application/rss+xml" />
 </channel>
 
 </rss> 
