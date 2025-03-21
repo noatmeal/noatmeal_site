@@ -33,3 +33,14 @@
   padding-bottom: .25em;
 }
 
+ul.inline-list > li {
+  display: inline-block;
+}
+
+.list {
+ list-style-type: "->";
+}
+
+.list-item {
+  padding-left: 1em;
+}

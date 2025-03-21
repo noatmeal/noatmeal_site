@@ -25,7 +25,7 @@
         <h2 style="margin-top: 0" id="site-navigation">Site</h2>
         <nav aria-labelledby="site-navigation">
           <div class="menu">
-            <ul class="first-menu">
+            <ul class="first-menu inline-list">
               <li class="list-item-except-last" >
                 <a href="/#dark" class="dark-theme-link">
                   Home 
@@ -62,7 +62,7 @@
         <h2 id="page-navigation">Page</h2>
         <nav aria-labelledby="page-navigation">
           <div class="menu">
-            <ul class="second-menu">
+            <ul class="second-menu inline-list">
               <li style="display: none" class="list-item-except-last" >
                 <span style="display: none">Second Menu: Item 100</span>
               </li>
@@ -78,8 +78,53 @@
       <div class="vertical-buffer-1em"></div>
       <div class="vertical-buffer-1em"></div>
       <div>
-        <h1 style="margin-top: 0">Roadmap</h1>
-          <p>Let's get this party started.</p>
+        <h1 style="margin-top: 0">The Near Future</h1>
+        <p>
+          I've had several different ambitions over the past seven years or 
+          so of my life. Among the ones that stick around in my head, I've 
+          wanted to: 
+        </p>
+        <ul class="list">
+          <li class="list-item">
+            Make a proof assistant so that I could understand mathematical 
+            proofs at a deeper level. 
+          </li>
+          <li class="list-item">
+            Create a dependently typed programming language.
+          </li>
+          <li class="list-item">
+            Create text based games with a dependently typed programming 
+            language and  then explore that game's "world" with the 
+            type/proof system of that language.
+          </li>
+          <li class="list-item">
+            Understand concepts like <a href="https://en.wikipedia.org/wiki/Lambda_cube">the Lambda Cube</a>. 
+          </li>
+        </ul>
+        <p>
+          My undergraduate and master's studies centered on mathematics with a 
+          minor in computer science. So I fell just short of taking a solid 
+          introduction course to computer science theory and I also never took 
+          a good compiler course. Two classes I really wish I was forced to 
+          take in hindsight because understanding and knowing how to 
+          implement the machines that can recognize languages in the <a href="https://en.wikipedia.org/wiki/Chomsky_hierarchy">Chomsky Hierarchy</a>
+          are total blindspots in my education and these blindspots are 
+          necessary for every single one of my ambitions listed above. 
+        </p>
+        <p>
+          Not too long ago I picked up the first edition of "Introduction to 
+          Automata Theory, Languages, and Computation" by John E. Hopcroft and 
+          Jeffry D. Ullman which is sometimes referred to as the 
+          <a href="https://en.wikipedia.org/wiki/Introduction_to_Automata_Theory,_Languages,_and_Computation#Nickname">"Cinderella Book"</a>.
+          It has the material that I need to learn and so that's where my focus 
+          is going to be for the next several blog posts. I'm hoping to develop 
+          these basic machines that recognize languages in Scheme, a language 
+          that I have a passing familiarity with but would enjoy more exposure 
+          to. 
+        </p>
+        <p>
+          So stay tuned :)
+        </p>
       </div>
     </div>  
   </div>
