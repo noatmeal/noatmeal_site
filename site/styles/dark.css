@@ -1,13 +1,13 @@
 #dark:target ~ .quasi-body {
   background-color: black;
-  color: #dddddd;
+  color: #FFFFFF;
   font-family: bigBlueTerm;
   width: 100vw; 
   height: 100vh; 
 }
 
 #dark:target ~ .quasi-body a {
-  color: #dddddd;
+  color: #FFFFFF;
 }
 
 #dark:target ~ .quasi-body .dark-theme-selector {
