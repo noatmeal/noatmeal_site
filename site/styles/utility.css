@@ -44,3 +44,15 @@ ul.inline-list > li {
 .list-item {
   padding-left: 1em;
 }
+
+.snippet {
+  display: inline-block;  
+  border: .1em solid #FFFFFF;
+  padding: .5em;
+  white-space: pre-line;
+}
+
+.snippet-container {
+  display: flex;
+  justify-content: center;
+}
