@@ -55,6 +55,9 @@ ul.inline-list > li {
   margin-bottom: .5em;
 }
 
+.snippet-repository {
+}
+
 .snippet-text {
   white-space: pre-line;
 }
