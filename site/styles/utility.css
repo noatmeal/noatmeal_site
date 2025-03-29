@@ -45,14 +45,29 @@ ul.inline-list > li {
   padding-left: 1em;
 }
 
-.snippet {
+.snippet-content {
   display: inline-block;  
   border: .1em solid #FFFFFF;
   padding: .5em;
+}
+
+.snippet-title {
+  margin-bottom: .5em;
+}
+
+.snippet-text {
   white-space: pre-line;
+}
+
+.snippet-output {
+  margin-top: .5em;
+  border-top: .1em dotted #FFFFFF;
+  padding-top: .5em;
 }
 
 .snippet-container {
   display: flex;
   justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
