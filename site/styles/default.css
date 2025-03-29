@@ -4,6 +4,10 @@
  * https://archive.irixnet.org/apocrypha/nekonomicon/forum/8/16727778/1.html
  */
 
+p {
+  line-height: 1.45;
+}
+
 html, body {
   margin: 0;
   padding: 0;
