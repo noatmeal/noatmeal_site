@@ -35,3 +35,15 @@
   list-style-type: "->";
   padding-left: 0;
 }
+
+#light:target ~ .quasi-body .snippet-content {
+  display: inline-block;                                                         
+  border: .1em solid black;                                                    
+  padding: .5em;   
+}
+
+#light:target ~ .quasi-body .snippet-output {
+  margin-top: .5em;                                                              
+  border-top: .1em dotted black;                                               
+  padding-top: .5em; 
+}
