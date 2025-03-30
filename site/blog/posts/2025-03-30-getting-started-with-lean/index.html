@@ -156,69 +156,70 @@
           I'll be sharing code in the following form and refer to these forms as 
           "files" that live in a "repository": 
        </p>
-        <div aria-label="File" class="snippet-container">
-          <div class="snippet-content">
-            <div class="snippet-repository">&lt;The Repository Name&gt;;</div>
-            <div class="snippet-title">&lt;The File Name&gt;;</div>
-            <div class="snippet-text">
+       <div aria-label="File" class="snippet-container">
+         <div class="snippet-content">
+           <div class="snippet-repository">&lt;The Repository Name&gt;;</div>
+           <div class="snippet-title">&lt;The File Name&gt;;</div>
+           <div class="snippet-text">
 &lt;First line of code&gt;
 &lt;Second line of code&gt;
-            </div>
-            <div aria-label="File Output" class="snippet-output">
-              &lt;Output from the code&gt;
-            </div>
+           </div>
+           <div aria-label="File Output" class="snippet-output">
+             &lt;Output from the code&gt;
+           </div>
           </div>
         </div>
         <h2> Hello, World! </h2>
-        A hello world program in Lean is very simple to write. Since that's the
-        case, I'll also showcase some file structure, string interpolation, and
-        comments in lean. 
-        <div style="display: flex; justify-content: center;"> 
-          <div 
-            id="hello-world-string" 
-            aria-label="Code Snippet" 
-            class="snippet-container"
-          >
-            <div class="snippet-content">
-              <div class="snippet-repository">HelloWorld;</div>
-              <div class="snippet-title">HelloWorld/Basic.lean;</div>
-              <div class="snippet-text">
--- We define the variable 
--- hello with type string
--- to have the value "world".
+        <p>
+          A hello world program in Lean is very simple to write. Since that's the
+          case, I'll also showcase some file structure, string interpolation, and
+          comments in lean. 
+        </p>
+        <div 
+          id="hello-world-string" 
+          aria-label="Code Snippet" 
+          class="snippet-container"
+        >
+          <div class="snippet-content">
+            <div class="snippet-repository">HelloWorld;</div>
+            <div class="snippet-title">HelloWorld/Basic.lean;</div>
+            <div class="snippet-text">
+-- We define the variable hello to have type string 
+-- and to have the value "world".
 def hello : String := "world"
-              </div>
             </div>
-          </div> 
-          <div aria-label="Code Snippet" class="snippet-container">
-            <div class="snippet-content">
-              <div class="snippet-repository">HelloWorld;</div>
-              <div class="snippet-title">HelloWorld.lean;</div>
-              <div class="snippet-text">
-import HelloWorld.Basic  
-              </div>
-            </div>
-          </div> 
-        </div>
+          </div>
+        </div> 
         <div aria-label="Code Snippet" class="snippet-container">
           <div class="snippet-content">
             <div class="snippet-repository">HelloWorld;</div>
-            <div class="snippet-title">Main.lean;</div>
+            <div class="snippet-title">HelloWorld.lean;</div>
             <div class="snippet-text">
+import HelloWorld.Basic  
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div aria-label="Code Snippet" class="snippet-container">
+        <div class="snippet-content">
+          <div class="snippet-repository">HelloWorld;</div>
+          <div class="snippet-title">Main.lean;</div>
+          <div class="snippet-text">
 import HelloWorld
            
 def main : IO Unit :=
   IO.println s!"Hello, {hello}!"
-            </div>
-            <div aria-label="Code Snippet Output" class="snippet-output">
-              Hello, World!
-            </div>
           </div>
-        </div>        
+          <div aria-label="Code Snippet Output" class="snippet-output">
+            Hello, World!
+          </div>
+        </div>
+      </div>
+      <p>
         I'm aware that this syntax is closely related to how haskell does things
         but I'm not yet prepared to go into detail about how this works 
         exactly. I hope to do so in the future! 
-      </div>
+      </p>
     </div>  
   </div>
 </body>
