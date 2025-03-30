@@ -149,50 +149,75 @@
           --></span>
           on how to do functional programming with this language. I just 
           started fumbling around with this guide and 
-          so I thought I'd spend the rest of this post sharing a couple of the
-          bare basics. 
+          so I thought I'd share my first hello world program in lean. 
         </p>
         <h2>Notation</h2>
         <p>
           I'll be sharing code in the following form and refer to these forms as 
           "files" that live in a "repository": 
        </p>
-        <div aria-label="Code Snippet" class="snippet-container">
+        <div aria-label="File" class="snippet-container">
           <div class="snippet-content">
             <div class="snippet-repository">&lt;The Repository Name&gt;;</div>
             <div class="snippet-title">&lt;The File Name&gt;;</div>
-            <div class="snippet-text"><!--
-            -->&lt;First line of code&gt;
-               &lt;Second line of code&gt;<!--
-         --></div>
-            <div aria-label="Code Snippet Output" class="snippet-output">
+            <div class="snippet-text">
+&lt;First line of code&gt;
+&lt;Second line of code&gt;
+            </div>
+            <div aria-label="File Output" class="snippet-output">
               &lt;Output from the code&gt;
             </div>
           </div>
         </div>
-        <h2> Hello World </h2>
-        A hello world program in Lean is very simple. 
+        <h2> Hello, World! </h2>
+        A hello world program in Lean is very simple to write. Since that's the
+        case, I'll also showcase some file structure, string interpolation, and
+        comments in lean. 
+        <div style="display: flex; justify-content: center;"> 
+          <div 
+            id="hello-world-string" 
+            aria-label="Code Snippet" 
+            class="snippet-container"
+          >
+            <div class="snippet-content">
+              <div class="snippet-repository">HelloWorld;</div>
+              <div class="snippet-title">HelloWorld/Basic.lean;</div>
+              <div class="snippet-text">
+-- We define the variable 
+-- hello with type string
+-- to have the value "world".
+def hello : String := "world"
+              </div>
+            </div>
+          </div> 
+          <div aria-label="Code Snippet" class="snippet-container">
+            <div class="snippet-content">
+              <div class="snippet-repository">HelloWorld;</div>
+              <div class="snippet-title">HelloWorld.lean;</div>
+              <div class="snippet-text">
+import HelloWorld.Basic  
+              </div>
+            </div>
+          </div> 
+        </div>
         <div aria-label="Code Snippet" class="snippet-container">
           <div class="snippet-content">
-            <div class="snippet-repository">&lt;The Repository Name&gt;;</div>
-            <div class="snippet-title">&lt;The File Name&gt;;</div>
-            <div class="snippet-text"><!--
-            -->&lt;First line of code&gt;
-               &lt;Second line of code&gt;<!--
-         --></div>
+            <div class="snippet-repository">HelloWorld;</div>
+            <div class="snippet-title">Main.lean;</div>
+            <div class="snippet-text">
+import HelloWorld
+           
+def main : IO Unit :=
+  IO.println s!"Hello, {hello}!"
+            </div>
             <div aria-label="Code Snippet Output" class="snippet-output">
-              &lt;Output from the code&gt;
+              Hello, World!
             </div>
           </div>
         </div>        
-        I'm not familiar with do syntax that I'm fairly certain comes from 
-        haskell nor am I too familiar with how monads work, so I can't tell you 
-        yet in detail how this works. I hope to do so in the future! 
-        <h2> Basic Types </h2>
-        Everything in Lean can be assigned with a type. Here are some simple 
-        examples.
-        <h2> Functions </h2>
-        Lean also the following function notation. 
+        I'm aware that this syntax is closely related to how haskell does things
+        but I'm not yet prepared to go into detail about how this works 
+        exactly. I hope to do so in the future! 
       </div>
     </div>  
   </div>
