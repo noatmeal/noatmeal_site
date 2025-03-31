@@ -2,8 +2,10 @@
   background-color: white;
   color: black;
   font-family: robotoMono;
-  width: 100vw; 
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #light:target ~ .quasi-body a {

@@ -2,8 +2,10 @@
   background-color: black;
   color: #FFFFFF;
   font-family: bigBlueTerm;
-  width: 100vw; 
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #dark:target ~ .quasi-body a {
