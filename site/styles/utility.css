@@ -45,38 +45,26 @@ ul.inline-list > li {
   padding-left: 1em;
 }
 
-.snippet-content {
-  display: inline-block;  
-  border: .1em solid #FFFFFF;
+.snippet-body {
+  border: .35em double white;
+  padding: .5em;
 }
 
 .snippet-title {
-  margin-bottom: .5em;
-  padding-left: .5em;
-  padding-bottom: .5em;
-  padding-right: .5em;
-  border-bottom: .1em dashed white;
-}
-
-.snippet-repository {
-  padding-top: .5em; 
-  padding-left: .5em;
-  padding-right: .5em; 
-}
-
-.snippet-text {
-  white-space: pre;
-  padding: .5em;
+  text-align: left;
 }
 
 .snippet-output {
-  margin-top: .5em;
-  border-top: .2em double #FFFFFF;
-  padding: .5em;
+  border-top: .1em dotted white;
 }
 
 .snippet-container {
   display: flex;
   justify-content: center;
-  margin: 2em;
+  margin: 1em;
+}
+
+.snippet-code {
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
