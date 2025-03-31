@@ -61,6 +61,7 @@ ul.inline-list > li {
 .snippet-container {
   display: flex;
   justify-content: center;
+  overflow-x: auto;
   margin: 1em;
 }
 
