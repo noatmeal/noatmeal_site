@@ -64,7 +64,8 @@ ul.inline-list > li {
   justify-content: center;
   min-width: 0;
   overflow: none;
-  margin: 1em;
+  margin: 2em;
+  overflow-x: scroll;
 }
 
 .snippet-code {
