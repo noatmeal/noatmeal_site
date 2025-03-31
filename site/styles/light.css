@@ -36,21 +36,14 @@
   padding-left: 0;
 }
 
-#light:target ~ .quasi-body .snippet-content {
-  display: inline-block;                                                         
-  border: .1em solid black;  
-}
-
-#light:target ~ .quasi-body .snippet-output {
-  margin-top: .5em;                                                              
-  border-top: .2em double black;                                               
-  padding: .5em;
+#light:target ~ .quasi-body .snippet-body {
+  border: .35em double black;  
 }
 
 #light:target ~ .quasi-body .snippet-title {
-  margin-bottom: .5em;                                                           
-  padding-left: .5em;                                                            
-  padding-bottom: .5em;                                                          
-  padding-right: .5em;                                                           
-  border-bottom: .1em dashed black; 
+  text-align: left;
+}
+
+#light:target ~ .quasi-body .snippet-output {
+  border-top: .1em dotted black;
 }
