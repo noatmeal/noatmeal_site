@@ -2,9 +2,8 @@
   background-color: white;
   color: black;
   font-family: robotoMono;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
+  max-width: 100%;
+  height: 100%;
   overflow-y: auto;
 }
 
