@@ -23,7 +23,7 @@
 }
 
 .eighty-character-width {
-  width: 80ch;
+  max-width: 80ch;
 }
 
 .vertical-buffer-1em {
